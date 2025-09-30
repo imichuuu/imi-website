@@ -1,0 +1,143 @@
+/*START FOR NAVIGATION*/
+.logo_title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo_one {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav a {
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.site-nav a.active_tab {
+  color: var(--white_color);
+}
+
+.menu-toggle {
+  display: none;             
+  background: transparent;
+  border: 0;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  margin: 5px 0;
+  background: var(--dark_brown_color);
+  transition: transform 200ms ease, opacity 200ms ease;
+}
+
+@media (max-width: 768px) {
+  .top_bar {
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: inline-block;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    display: none;                
+    flex-direction: column;
+    background: var(--light_khaki_color);
+    border-bottom: 1px solid #eee;
+    padding: 12px;
+    z-index: 20;
+    border-radius: 10px;
+  }
+
+  .site-nav a {
+    padding: 12px 10px;
+    border-radius: 6px;
+  }
+
+  .site-nav.open {
+    display: flex;
+  }
+
+  .menu-toggle[aria-expanded="true"] .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .menu-toggle[aria-expanded="true"] .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggle[aria-expanded="true"] .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .menu-toggle .bar {
+    transition: none;
+  }
+}
+/*END FOR NAVIGATION*/
+
+/*START FOR CONTENT FOR HOME PAGE*/
+@media (max-width: 768px) {
+  .content_first_row,
+  .content_second_row {
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 5px;    
+  }
+
+  .upper_left_box,
+  .upper_right_box,
+  .bottom_right_box {
+    max-width: 500px;  
+    margin: 10px auto;
+    width: 100%;   
+    box-sizing: border-box;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .img_1,
+  .img_2 {
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    display: block;
+    max-width: 100%;
+  }
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+}
+/*END FOR CONTENT FOR HOME PAGE*/
