@@ -141,3 +141,60 @@
 
 }
 /*END FOR CONTENT FOR HOME PAGE*/
+
+/*START FOR CONTENT FOR WORKS & ATTAINMENT PAGE*/
+@media (max-width: 768px) {
+  .content_first_row_works,
+  .content_first_row_attainment {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 16px;
+    padding: 12px;
+    flex-wrap: wrap !important;
+  }
+
+  .upper_right_box_works,
+  .upper_right_box_attainment {
+    width: 100% !important;
+    max-width: 720px !important; 
+    margin: 12px 0 !important;
+    padding: 18px !important;
+    box-sizing: border-box !important;
+  }
+
+  .img_1_works,
+  .img_2_works {
+    width: 100% !important;
+    height: 220px !important;
+    max-height: 280px !important;
+    display: block !important;
+    margin: 0 auto !important;
+    background-size: cover !important;
+    background-position: center !important;
+    border-radius: 10px !important;
+  }
+
+  .upper_right_box_works h2,
+  .upper_right_box_works h3 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .upper_right_box_works p {
+    font-size: 0.95rem !important;
+    line-height: 1.4 !important;
+  }
+
+  .main_title_header {
+    font-size: 1.5rem !important;
+    margin: 18px 10px !important;
+    text-align: center !important;
+  }
+
+  html, body {
+    overflow-x: hidden !important;
+  }
+}
+/*END FOR CONTENT FOR WORKS & ATTAINMENT PAGE*/
+
